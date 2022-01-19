@@ -1,0 +1,90 @@
+/* STRT Navbar STRT */
+* {
+  box-sizing: border-box;
+}
+.nav-container {
+  display: flex;
+  /*   position: fixed;
+  z-index: 10; */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  border: 1px solid black;
+  background-color: rgb(30, 30, 73);
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+  display: flex;
+  /*   position: fixed;
+  top: 60px;
+  z-index: 10; */
+  flex-direction: column;
+  text-align: center;
+  /* height: calc(100vh - 62px); */
+  height: 60vh;
+  width: 50vw;
+  border: 1px solid red;
+  background-color: rgb(30, 30, 73);
+}
+
+.sidebar-menu .link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 5px 10px 5px;
+  transition: 0.2s ease-in-out;
+}
+
+.sidebar-menu .link:hover {
+  background-color: rgb(40, 40, 98);
+  font-size: 1.1rem;
+}
+
+/* END Navbar END */
+
+/* STRT Icons STRT */
+.brand-icon {
+  color: white;
+  font-size: 3rem;
+  padding-left: 25px;
+}
+
+.hamburger-menu {
+  padding-right: 25px;
+  color: white;
+  font-size: 3rem;
+  border-radius: 10px;
+}
+
+.sidebar-menu-icons {
+  color: white;
+}
+
+/* Link icons */
+.link-icon {
+  font-size: 1.2rem;
+  transition: 0.2s ease-in-out;
+  margin-right: 10px;
+  color: white;
+}
+
+/* Make increase font-size when hover-effect is active on links. How? */
+.link-icon.link:hover {
+  font-size: 1.4rem;
+}
+.menu-icon {
+  font-size: 1.6rem;
+  margin: 10px 5px 10px 5px;
+  transition: 0.2s ease-in-out;
+}
+
+.menu-icon:hover {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* END Icons END */
