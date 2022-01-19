@@ -10,8 +10,15 @@ import {
 import { HiAcademicCap, HiTemplate } from 'react-icons/hi';
 import { MdOutlineConnectWithoutContact } from 'react-icons/md';
 import { BsFillPersonFill } from 'react-icons/bs';
+import { useState } from 'react';
 
 function Navbar() {
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+    console.log(toggle);
+  };
   return (
     <>
       <nav className='nav-container'>
@@ -23,12 +30,12 @@ function Navbar() {
           <span>Current Page</span>
         </div>
         <div className='menu-icon-container'>
-          <span className='hamburger-wrapper'>
+          <span className='hamburger-wrapper' onClick={handleToggle}>
             <GiHamburgerMenu className='hamburger-menu' />
           </span>
         </div>
       </nav>
-      <div className='sidebar-menu'>
+      <div className={`sidebar-menu ${toggle ? 'active' : ''}`}>
         <a href='#' className='link'>
           <span>
             <AiFillHome className='link-icon' />
