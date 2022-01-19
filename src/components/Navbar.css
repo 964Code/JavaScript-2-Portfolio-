@@ -4,8 +4,8 @@
 }
 .nav-container {
   display: flex;
-  /*   position: fixed;
-  z-index: 10; */
+  position: fixed;
+  z-index: 10;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -20,9 +20,9 @@
 /* Sidebar Menu */
 .sidebar-menu {
   display: flex;
-  /*   position: fixed;
+  position: fixed;
   top: 60px;
-  z-index: 10; */
+  z-index: 10;
   flex-direction: column;
   text-align: center;
   /* height: calc(100vh - 62px); */
