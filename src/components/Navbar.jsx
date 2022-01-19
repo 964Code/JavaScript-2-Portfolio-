@@ -23,7 +23,9 @@ function Navbar() {
           <span>Current Page</span>
         </div>
         <div className='menu-icon-container'>
-          <GiHamburgerMenu className='hamburger-menu' />
+          <span className='hamburger-wrapper'>
+            <GiHamburgerMenu className='hamburger-menu' />
+          </span>
         </div>
       </nav>
       <div className='sidebar-menu'>
