@@ -30,6 +30,7 @@ function Navbar() {
       }
     });
   });
+  /* Note that function to toggle navbar when pressing the menu needs to be fixed. Does not stay hidden when pressing again if menu is open. Click has to be outside of menu or hamburger menu */
   return (
     <>
       <nav className='nav-container'>
