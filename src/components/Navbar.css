@@ -25,7 +25,9 @@
   z-index: 10;
   flex-direction: column;
   text-align: center;
+  min-height: 268px;
   height: 45vh;
+  max-height: 268px;
   width: 35vh;
   background-color: rgb(30, 30, 73);
   border-bottom-left-radius: 20px;
