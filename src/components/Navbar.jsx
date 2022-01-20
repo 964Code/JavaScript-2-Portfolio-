@@ -10,15 +10,26 @@ import {
 import { HiAcademicCap, HiTemplate } from 'react-icons/hi';
 import { MdOutlineConnectWithoutContact } from 'react-icons/md';
 import { BsFillPersonFill } from 'react-icons/bs';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 function Navbar() {
+  /* Toggle menu */
   const [toggle, setToggle] = useState(false);
-
   const handleToggle = () => {
     setToggle(!toggle);
     console.log(toggle);
   };
+
+  /* Close menu if pressing outside menu */
+  /* Possible to create cutsom Hook and import this function from outside to lessen te amount of code shown in the Nav component? */
+  let menuRef = useRef();
+  useEffect(() => {
+    document.addEventListener('mousedown', (event) => {
+      if (!menuRef.current.contains(event.target)) {
+        setToggle(false);
+      }
+    });
+  });
   return (
     <>
       <nav className='nav-container'>
@@ -35,7 +46,7 @@ function Navbar() {
           </span>
         </div>
       </nav>
-      <div className={`sidebar-menu ${toggle ? 'active' : ''}`}>
+      <div ref={menuRef} className={`sidebar-menu ${toggle ? 'active' : ''}`}>
         <a href='#' className='link'>
           <span>
             <AiFillHome className='link-icon' />
