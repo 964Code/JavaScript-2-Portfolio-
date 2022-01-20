@@ -64,12 +64,31 @@
 }
 
 /* Fix so cursor is only on menu icon */
+
+.close-menu {
+  padding-right: 25px;
+  color: white;
+  font-size: 3.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  /*   pointer-events: none; */
+}
+
+.close-menu.active {
+  display: none;
+}
+
 .hamburger-menu {
   padding-right: 25px;
   color: white;
   font-size: 3.5rem;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.hamburger-menu.active {
+  display: none;
 }
 
 .sidebar-menu-icons {

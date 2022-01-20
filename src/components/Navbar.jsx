@@ -6,6 +6,7 @@ import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillHome,
+  AiOutlineCloseCircle,
 } from 'react-icons/ai';
 import { HiAcademicCap, HiTemplate } from 'react-icons/hi';
 import { MdOutlineConnectWithoutContact } from 'react-icons/md';
@@ -24,11 +25,15 @@ function Navbar() {
   /* Possible to create cutsom Hook and import this function from outside to lessen te amount of code shown in the Nav component? */
   let menuRef = useRef();
   useEffect(() => {
-    document.addEventListener('mousedown', (event) => {
+    let handeler = (event) => {
       if (!menuRef.current.contains(event.target)) {
         setToggle(false);
       }
-    });
+    };
+    document.addEventListener('mousedown', handeler);
+    return () => {
+      document.removeEventListener('mousedown', handeler);
+    };
   });
   /* Note that function to toggle navbar when pressing the menu needs to be fixed. Does not stay hidden when pressing again if menu is open. Click has to be outside of menu or hamburger menu */
   return (
@@ -42,8 +47,19 @@ function Navbar() {
           <span>Current Page</span>
         </div>
         <div className='menu-icon-container'>
-          <span className='hamburger-wrapper' onClick={handleToggle}>
-            <GiHamburgerMenu className='hamburger-menu' />
+          <span
+            ref={menuRef}
+            className='hamburger-wrapper'
+            onClick={handleToggle}
+          >
+            <GiHamburgerMenu
+              className={`hamburger-menu ${toggle ? 'active' : ''}`}
+            />
+          </span>
+          <span>
+            <AiOutlineCloseCircle
+              className={`close-menu ${toggle ? '' : 'active'}`}
+            />
           </span>
         </div>
       </nav>
