@@ -118,7 +118,6 @@
 
 .menu-icon:hover {
   transform: rotateY(360deg);
-  /* font-size: 1.8rem; */
   cursor: pointer;
 }
 
