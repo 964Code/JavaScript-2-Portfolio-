@@ -1,8 +1,9 @@
 import React from 'react';
-import 'Skills.css';
+import './Skills.css';
 
 function Skills() {
-  return <div></div>;
+  document.title = 'Skills';
+  return <div className='skills'></div>;
 }
 
 export default Skills;
