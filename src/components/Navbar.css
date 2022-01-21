@@ -51,7 +51,7 @@
 }
 
 .sidebar-menu .link:hover {
-  background-color: rgb(40, 40, 98);
+  background-color: rgba(252, 252, 252, 0.068);
   font-size: 1.1rem;
 }
 
@@ -61,6 +61,7 @@
 .brand-icon {
   height: 60px;
   padding-top: 5px;
+  padding-left: 10px;
   cursor: pointer;
 }
 

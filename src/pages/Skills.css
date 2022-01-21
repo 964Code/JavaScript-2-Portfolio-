@@ -1,5 +1,54 @@
 .skills {
-  width: 100vw;
-  height: 100vh;
-  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 101vh;
+  background-color: rgb(167, 123, 250);
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+  height: 60vh;
+  border: 1px solid red;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: rgb(74, 62, 243);
+}
+
+.skill-list {
+  display: flex;
+  width: 175px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(6, 63, 114);
+  border: 1px solid blue;
+  border-radius: 10px;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-list p {
+  font-weight: 600;
+  color: white;
+}
+
+.skill-icon {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.skill-list:hover {
+  background-color: rgb(10, 93, 167);
+}
+.skills-text-container {
+  color: white;
+  max-width: 720px;
+  padding: 0 5% 0 5%;
+  text-align: center;
 }
