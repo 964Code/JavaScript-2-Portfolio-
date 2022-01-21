@@ -12,6 +12,7 @@ import { HiAcademicCap, HiTemplate } from 'react-icons/hi';
 import { MdOutlineConnectWithoutContact } from 'react-icons/md';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { useState, useEffect, useRef } from 'react';
+import BaldIcon from '../resources/baldIconTest.svg';
 
 function Navbar() {
   /* Toggle menu */
@@ -40,7 +41,8 @@ function Navbar() {
     <>
       <nav className='nav-container'>
         <div className='brand-icon-container'>
-          <GiClownfish className='brand-icon' />
+          <img src={BaldIcon} alt='Brand Icon' className='brand-icon' />
+          {/* <GiClownfish className='brand-icon' /> */}
         </div>
 
         <div className='current-page-container'>

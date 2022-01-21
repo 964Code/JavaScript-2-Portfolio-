@@ -1,5 +1,10 @@
 .home {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(116, 116, 216);
+  background-color: rgb(143, 143, 226);
+  /* padding-top: 60px; */
+}
+
+.hero-text {
+  font-size: 1.4rem;
 }
