@@ -112,11 +112,13 @@
 .menu-icon {
   font-size: 1.6rem;
   margin: 10px 5px 10px 5px;
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
+  margin: 10px;
 }
 
 .menu-icon:hover {
-  font-size: 1.8rem;
+  transform: rotateY(360deg);
+  /* font-size: 1.8rem; */
   cursor: pointer;
 }
 

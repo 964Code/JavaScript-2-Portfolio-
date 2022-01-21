@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  animation: hue-rotate 30s 1s infinite;
 }
 
 .hero:before {
@@ -32,4 +33,13 @@
 .hero-content p {
   color: white;
   text-align: center;
+}
+
+@keyframes hue-rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }

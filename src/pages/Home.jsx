@@ -18,7 +18,7 @@ function Home() {
         title={
           <Typewriter
             options={{
-              strings: ['Hello!', 'Привет!', 'こんにちは!', 'Buna!'],
+              strings: ['Hello!', 'Привет!', 'こんにちは!', 'Buna!', 'مرحبا!'],
               autoStart: true,
               loop: true,
             }}
