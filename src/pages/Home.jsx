@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import Hero from '../components/Hero';
 import Typewriter from 'typewriter-effect';
+import { useEffect, useRef } from 'react';
 
 function Home() {
   const hero = {

@@ -14,7 +14,7 @@ import { BsFillPersonFill } from 'react-icons/bs';
 import { useState, useEffect, useRef } from 'react';
 import BaldIcon from '../resources/baldIconTest.svg';
 
-function Navbar() {
+function Navbar(title) {
   /* Toggle menu */
   const [toggle, setToggle] = useState(false);
   const handleToggle = () => {

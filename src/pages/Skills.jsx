@@ -8,8 +8,15 @@ import { SiNodedotjs } from 'react-icons/si';
 import skills from '../resources/skills';
 
 function Skills() {
-  document.title = 'Skills';
-  console.log(skills[0]['icon']);
+  const icons = [
+    <AiFillHtml5 className='card-icon' />,
+    <DiCss3 className='card-icon' />,
+    <DiSass className='card-icon' />,
+    <SiJavascript className='card-icon' />,
+    <FaReact className='card-icon' />,
+    <SiNodedotjs className='card-icon' />,
+  ];
+
   return (
     <div className='skills' id='skills'>
       <div className='skills-text-container'>
@@ -26,11 +33,11 @@ function Skills() {
       </div>
 
       <div className='skill-container'>
-        {skills.map((skill) => {
+        {skills.map((skill, index) => {
           return (
-            <div className='skill-list card'>
-              <div></div>
-              <p>{skill.icon.contact}</p>
+            <div className='skill-list card' key={skill.id}>
+              {icons[index]}
+              <div className='card-text'>{skill.text}</div>
             </div>
           );
         })}
