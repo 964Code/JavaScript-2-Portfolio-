@@ -35,3 +35,5 @@ const skills = [
     skill: 'Node.JS',
   },
 ];
+
+export default skills;

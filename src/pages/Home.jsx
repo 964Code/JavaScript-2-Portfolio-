@@ -13,7 +13,7 @@ function Home() {
   };
   document.title = 'Welcome';
   return (
-    <div className='home'>
+    <div className='home' id='home'>
       <Hero
         title={
           <Typewriter

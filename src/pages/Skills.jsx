@@ -5,11 +5,13 @@ import { DiCss3, DiSass } from 'react-icons/di';
 import { SiJavascript } from 'react-icons/si';
 import { FaReact } from 'react-icons/fa';
 import { SiNodedotjs } from 'react-icons/si';
+import skills from '../resources/skills';
 
 function Skills() {
   document.title = 'Skills';
+  console.log(skills[0]['icon']);
   return (
-    <div className='skills'>
+    <div className='skills' id='skills'>
       <div className='skills-text-container'>
         <h2>Skills & Implementation</h2>
         <p>
@@ -22,12 +24,18 @@ function Skills() {
           consequuntur, minus ipsa. Ex beatae recusandae eligendi!
         </p>
       </div>
+
       <div className='skill-container'>
-        <div className='skill-list'>
-          <AiFillHtml5 className='skill-icon html' />
-          <p>HTML 5</p>
-        </div>
-        <div className='skill-list'>
+        {skills.map((skill) => {
+          return (
+            <div className='skill-list card'>
+              <div></div>
+              <p>{skill.icon.contact}</p>
+            </div>
+          );
+        })}
+
+        {/* <div className='skill-list'>
           <DiCss3 className='skill-icon css' />
           <p>CSS3</p>
         </div>
@@ -46,7 +54,7 @@ function Skills() {
         <div className='skill-list'>
           <SiNodedotjs className='skill-icon node' />
           <p>Node.JS</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

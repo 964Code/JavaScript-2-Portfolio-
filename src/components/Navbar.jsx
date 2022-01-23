@@ -66,40 +66,50 @@ function Navbar() {
         </div>
       </nav>
       <div ref={menuRef} className={`sidebar-menu ${toggle ? 'active' : ''}`}>
-        <a href='#' className='link'>
+        <a href='#home' className='link'>
           <span>
             <AiFillHome className='link-icon' />
           </span>
           Home
         </a>
-        <a href='#' className='link'>
+        <a href='#skills' className='link'>
           <span>
             <HiAcademicCap className='link-icon' />
           </span>
           Skills
         </a>
-        <a href='#' className='link'>
+        <a href='#projects' className='link'>
           <span>
             <HiTemplate className='link-icon' />
           </span>
           Projects
         </a>
-        <a href='#' className='link'>
+        <a href='#about' className='link'>
           <span>
             <BsFillPersonFill className='link-icon' />
           </span>
           About
         </a>
-        <a href='#' className='link'>
+        <a href='#contact' className='link'>
           <span>
             <MdOutlineConnectWithoutContact className='link-icon' />
           </span>
           Contact
         </a>
         <div className='sidebar-menu-icons'>
-          <AiFillTwitterCircle className='menu-icon' />
-          <AiFillGithub className='menu-icon' />
-          <AiFillLinkedin className='menu-icon' />
+          <a href='https://twitter.com/?lang=en' target='_blank'>
+            <AiFillTwitterCircle
+              className='menu-icon'
+              href='https://github.com/'
+            />
+          </a>
+          <a href='https://github.com/' target='_blank'>
+            <AiFillGithub className='menu-icon' />
+          </a>
+
+          <a href='https://www.linkedin.com/' target='_blank'>
+            <AiFillLinkedin className='menu-icon' />
+          </a>
         </div>
       </div>
     </>

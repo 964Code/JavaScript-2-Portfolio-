@@ -35,6 +35,8 @@
   text-align: center;
 }
 
+/* Keyframe for setting up hero-img hue roation */
+
 @keyframes hue-rotate {
   0% {
     filter: hue-rotate(0deg);

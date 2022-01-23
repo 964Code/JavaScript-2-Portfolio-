@@ -96,6 +96,10 @@
 .sidebar-menu-icons {
   color: white;
 }
+.sidebar-menu-icons a {
+  text-decoration: none;
+  color: white;
+}
 
 /* Link icons */
 .link-icon {
