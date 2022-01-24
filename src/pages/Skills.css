@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
 .skills {
   display: flex;
   flex-direction: column;
@@ -8,6 +10,7 @@
 }
 
 .skills-text-container {
+  font-family: 'Titillium Web', sans-serif;
   color: white;
   display: flex;
   flex-direction: column;
@@ -16,7 +19,7 @@
   margin: 10% 5% 0 5%;
   border-radius: 20px;
   background: #559bdd;
-  box-shadow: 20px 20px 60px #4884bc, -20px -20px 60px #62b2fe;
+  box-shadow: 14px 14px 41px #4884bc, -14px -14px 41px #62b2fe;
   padding: 20px;
 }
 
@@ -31,13 +34,12 @@
   padding: 20px;
   border-radius: 20px;
   background: #559bdd;
-  box-shadow: 20px 20px 60px #4884bc, -20px -20px 60px #62b2fe;
+  box-shadow: 14px 14px 41px #4884bc, -14px -14px 41px #62b2fe;
   transition: all 0.3s ease-in-out;
 }
 
 .grid-item:hover {
-  background: #57a9f5;
-  box-shadow: 20px 20px 60px #4884bc, -20px -20px 50px #62b2fe;
+  background: #6fb0ec;
 }
 
 .card-icon-container {
@@ -52,6 +54,7 @@
   color: white;
   font-weight: 500;
   text-align: center;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 @media only screen and (max-width: 420px) {

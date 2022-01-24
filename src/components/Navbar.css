@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 /* STRT Navbar STRT */
+
 * {
   box-sizing: border-box;
 }
@@ -15,6 +18,11 @@
   color: white;
   font-weight: 500;
   font-size: 1.3rem;
+}
+
+.current-page-container {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 600;
 }
 
 /* Sidebar Menu */

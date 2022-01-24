@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
 .home {
   width: 100%;
   height: 100vh;
   background-color: rgb(143, 143, 226);
-  /* padding-top: 60px; */
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .hero-text {

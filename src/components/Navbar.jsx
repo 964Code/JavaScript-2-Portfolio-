@@ -41,12 +41,13 @@ function Navbar(title) {
     <>
       <nav className='nav-container'>
         <div className='brand-icon-container'>
-          <img src={BaldIcon} alt='Brand Icon' className='brand-icon' />
-          {/* <GiClownfish className='brand-icon' /> */}
+          <a href='#home'>
+            <img src={BaldIcon} alt='Brand Icon' className='brand-icon' />
+          </a>
         </div>
 
         <div className='current-page-container'>
-          <span>Current Page</span>
+          <span>MyFolio</span>
         </div>
         <div className='menu-icon-container'>
           <span
