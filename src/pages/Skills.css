@@ -4,8 +4,58 @@
   align-items: center;
   width: 100%;
   min-height: 101vh;
-  background-color: #9b59b6;
+  background-color: #559bdd;
 }
 
-.skill-container {
+.skills-text-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 10% 5% 0 5%;
+  border-radius: 20px;
+  background: #559bdd;
+  box-shadow: 20px 20px 60px #4884bc, -20px -20px 60px #62b2fe;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 10% 0 10% 0;
+}
+
+.grid-item {
+  padding: 20px;
+  border-radius: 20px;
+  background: #559bdd;
+  box-shadow: 20px 20px 60px #4884bc, -20px -20px 60px #62b2fe;
+  transition: all 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+  background: #57a9f5;
+  box-shadow: 20px 20px 60px #4884bc, -20px -20px 50px #62b2fe;
+}
+
+.card-icon-container {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media only screen and (max-width: 420px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
 }
