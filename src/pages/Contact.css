@@ -83,6 +83,9 @@ h2:after {
   border-radius: 5px;
 }
 
+.field textarea {
+  min-height: 100px;
+}
 .field:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -156,5 +159,8 @@ textarea {
   }
   .right {
     height: 100%;
+  }
+  .contact-box {
+    box-shadow: none;
   }
 }
