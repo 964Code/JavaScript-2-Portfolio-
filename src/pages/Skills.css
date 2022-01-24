@@ -26,6 +26,7 @@
   background: #559bdd;
   box-shadow: 14px 14px 41px #4884bc, -14px -14px 41px #62b2fe;
   padding: 20px;
+  max-width: 1000px;
 }
 
 .grid-container {
