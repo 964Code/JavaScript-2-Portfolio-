@@ -1,6 +1,18 @@
 .footer {
   height: 60px;
-  background-color: rgb(50, 200, 226);
+  /* background: rgb(50, 200, 226);
+  background: radial-gradient(
+    circle,
+    rgba(50, 200, 226, 1) 70%,
+    rgba(127, 255, 212, 1) 100%
+  ); */
+  background: rgb(50, 200, 226);
+  background: radial-gradient(
+    circle,
+    rgba(50, 200, 226, 1) 30%,
+    rgba(127, 255, 212, 1) 100%
+  );
+  border-top: 2px solid rgb(75, 226, 236);
 }
 
 .footer-icon-container {

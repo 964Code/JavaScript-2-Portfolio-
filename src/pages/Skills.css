@@ -6,7 +6,12 @@
   align-items: center;
   width: 100%;
   min-height: 101vh;
-  background-color: #559bdd;
+  background: rgb(85, 155, 221);
+  background: linear-gradient(
+    180deg,
+    rgba(85, 155, 221, 1) 61%,
+    rgba(46, 204, 113, 1) 100%
+  );
 }
 
 .skills-text-container {

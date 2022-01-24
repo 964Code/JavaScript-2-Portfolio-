@@ -1,5 +1,11 @@
 .about {
-  background-color: #1abc9c;
+  /*   background-color: #1abc9c; */
   height: 100vh;
   width: 100%;
+  background: rgb(46, 204, 113);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 204, 113, 1) 61%,
+    rgba(26, 188, 156, 1) 100%
+  );
 }
