@@ -1,6 +1,7 @@
 .contact {
-  /* background-color: #7fffd4; */
-  height: 100vh;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
   width: 100%;
   background: #7fffd4;
   background: linear-gradient(
