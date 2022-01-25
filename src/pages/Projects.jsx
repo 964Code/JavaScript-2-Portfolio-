@@ -3,6 +3,26 @@ import './Project.css';
 import Card from '../components/Card';
 
 function Projects() {
+  const projectList = [
+    {
+      title: 'E-Commerce',
+      content:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni eos nam consequatur. Expedita quas ut quasi temporibus voluptas ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsam voluptate, sint nisi nemo autem dolores reprehenderit neque velit, voluptatem aliquam vero architecto? Pariatur delectus error dignissimos laboriosam excepturi molestiae!',
+      link: 'https://github.com/',
+    },
+    {
+      title: 'To-Do List',
+      content:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni eos nam consequatur. Expedita quas ut quasi temporibus voluptas ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsam voluptate, sint nisi nemo autem dolores reprehenderit neque velit, voluptatem aliquam vero architecto? Pariatur delectus error dignissimos laboriosam excepturi molestiae!',
+      link: 'https://github.com/',
+    },
+    {
+      title: 'Hotel Website',
+      content:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni eos nam consequatur. Expedita quas ut quasi temporibus voluptas ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsam voluptate, sint nisi nemo autem dolores reprehenderit neque velit, voluptatem aliquam vero architecto? Pariatur delectus error dignissimos laboriosam excepturi molestiae!',
+      link: 'https://github.com/',
+    },
+  ];
   return (
     <div className='projects' id='projects'>
       <div className='projects-text'>
@@ -18,32 +38,16 @@ function Projects() {
         </p>
       </div>
 
-      <Card
-        title='E-Comerce'
-        content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nobis
-          neque excepturi sapiente saepe nulla ad enim adipisci ex, tenetur
-          commodi possimus consequuntur praesentium, eligendi atque est cumque
-          eius quisquam.'
-        link='https://github.com/'
-      />
-
-      <Card
-        title='To-do List'
-        content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nobis
-          neque excepturi sapiente saepe nulla ad enim adipisci ex, tenetur
-          commodi possimus consequuntur praesentium, eligendi atque est cumque
-          eius quisquam.'
-        link='https://github.com/'
-      />
-
-      <Card
-        title='Hotel Website'
-        content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nobis
-          neque excepturi sapiente saepe nulla ad enim adipisci ex, tenetur
-          commodi possimus consequuntur praesentium, eligendi atque est cumque
-          eius quisquam.'
-        link='https://github.com/'
-      />
+      {projectList.map((project, index) => {
+        return (
+          <Card
+            title={project.title}
+            content={project.content}
+            link={project.link}
+            key={index}
+          />
+        );
+      })}
     </div>
   );
 }

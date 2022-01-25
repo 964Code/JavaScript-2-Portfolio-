@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import { GiHamburgerMenu, GiClownfish } from 'react-icons/gi';
+import { GiHamburgerMenu } from 'react-icons/gi';
 import {
   AiFillTwitterCircle,
   AiFillGithub,
