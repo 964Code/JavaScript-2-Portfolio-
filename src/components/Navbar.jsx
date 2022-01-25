@@ -67,31 +67,31 @@ function Navbar(title) {
         </div>
       </nav>
       <div ref={menuRef} className={`sidebar-menu ${toggle ? 'active' : ''}`}>
-        <a href='#home' className='link'>
+        <a href='#home' className='link' onClick={handleToggle}>
           <span>
             <AiFillHome className='link-icon' />
           </span>
           Home
         </a>
-        <a href='#skills' className='link'>
+        <a href='#skills' className='link' onClick={handleToggle}>
           <span>
             <HiAcademicCap className='link-icon' />
           </span>
           Skills
         </a>
-        <a href='#projects' className='link'>
+        <a href='#projects' className='link' onClick={handleToggle}>
           <span>
             <HiTemplate className='link-icon' />
           </span>
           Projects
         </a>
-        <a href='#about' className='link'>
+        <a href='#about' className='link' onClick={handleToggle}>
           <span>
             <BsFillPersonFill className='link-icon' />
           </span>
           About
         </a>
-        <a href='#contact' className='link'>
+        <a href='#contact' className='link' onClick={handleToggle}>
           <span>
             <MdOutlineConnectWithoutContact className='link-icon' />
           </span>

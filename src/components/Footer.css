@@ -1,11 +1,7 @@
 .footer {
   height: 60px;
   background: rgb(50, 200, 226);
-  background: radial-gradient(
-    circle,
-    rgba(50, 200, 226, 1) 30%,
-    rgba(127, 255, 212, 1) 100%
-  );
+  background: radial-gradient(circle, #32c8e2 30%, rgba(127, 255, 212, 1) 100%);
   border-top: 2px solid rgb(75, 226, 236);
 }
 
