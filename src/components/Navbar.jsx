@@ -102,10 +102,10 @@ function Navbar(title) {
           <a href='https://twitter.com/?lang=en' target='_blank'>
             <AiFillTwitterCircle
               className='menu-icon'
-              href='https://github.com/'
+              href='https://twitter.com/?lang=en'
             />
           </a>
-          <a href='https://github.com/' target='_blank'>
+          <a href='https://github.com/964Code' target='_blank'>
             <AiFillGithub className='menu-icon' />
           </a>
 
