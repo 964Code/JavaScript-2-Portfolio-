@@ -5,9 +5,9 @@ This project was created for KYH JavaScript 2 assignment showcasing React-basics
 
 ## Additional packages used
 
-React Icons(https://react-icons.github.io/react-icons/),
-Typewriter-effects(https://www.npmjs.com/package/typewriter-effect)
-EmailJS(https://www.emailjs.com/docs/)
+- React Icons(https://react-icons.github.io/react-icons/),
+- Typewriter-effects(https://www.npmjs.com/package/typewriter-effect)
+- EmailJS(https://www.emailjs.com/docs/)
 ## Start code and view it:
  1. You will need to install NPM - https://phoenixnap.com/kb/install-node-js-npm-on-windows
  2. Open terminal for zipped folder > Inside the terminal, run command: “npm install”. Once everything is installed, run command: “npm start”. 
