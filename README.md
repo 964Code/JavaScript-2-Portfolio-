@@ -14,7 +14,7 @@ Typewriter-effects(https://www.npmjs.com/package/typewriter-effect)
  To take a look at the code in VS Code, open a terminal for folder that was downloaded and type in command: “code .”
  
  Should you have any issues with running the command "code ." -> Check solution(Or just open folder via VSCode):
- https://code.visualstudio.com/docs/setup/mac (This is for MacOS) https://stackoverflow.com/questions/46638944/code-is-not-recognized-as-an-internal-or-external- command/48781978 (Windows)
+ https://code.visualstudio.com/docs/setup/mac (This is for MacOS) https://stackoverflow.com/questions/46638944/code-is-not-recognized-as-an-internal-or-external-command/48781978 (Windows)
 
  
 
