@@ -35,7 +35,7 @@ function About() {
           <br />
           <span className='quote'>
             “WELL, JOHN WASN’T EXACTLY ‘THE BOOGEYMAN.’ HE WAS THE ONE YOU SENT
-            TO KILL THE F***KIN’ BOOGEYMAN.”
+            TO KILL THE BOOGEYMAN.”
           </span>
           <br />
           <p>
