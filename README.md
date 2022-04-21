@@ -1,6 +1,6 @@
 # About Project
 
-This project was created for KYH JavaScript 2 assignment showcasing React-basics by creating a portfolio solo. 
+This project was created for KYH JavaScript 2 assignment showcasing React-basics by creating a portfolio solo. Note that this is the first version of the portfolio, a new one is planned to be made during the summer. 
 
 
 ## Additional packages used
